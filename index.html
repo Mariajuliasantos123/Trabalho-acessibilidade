@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Nirvana</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles-nirvana.css">
+</head>
+
+<body>
+    <header class="p-4">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/nirvana-logo.png" alt="Logo do Nirvana: um rosto sorrindo, com olhos em formato de X e língua para fora" class="nav-img" loading="lazy">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar o contraste de cores"> <i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center flex-column flex-md-row">
+                <div class="esquerda-conteudo text-center text-md-start">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindo ao universo</h1>
+                    <img src="img/nirvana-titulo.png" alt="Título Nirvana" class="mb-3" width="auto" height="200" loading="lazy">
+                    <p class="text-white lead mt-3">A banda que redefiniu o rock e marcou uma geração.</p>
+                    <a href="#historia" class="btn btn-primary btn-lg botao-inicio fw-semibold mt-4">Conheça a lenda!</a>
+                </div>
+                <img src="img/nirvana-main.png" alt="Capa do álbum Nevermind do Nirvana, com um bebê nadando subaquático em direção a uma nota de dólar" title="Nevermind album cover" class="img-fluid img-inicio d-none d-md-block">
+            </div>
+        </section>
+
+        <section id="historia" class="my-5 pt-6 secao-historia" tabindex="0" aria-label="Seção sobre a história da banda Nirvana">
+            <div class="container d-flex align-items-center flex-column flex-md-row">
+                <div class="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+                    <img src="img/kurt-cobain.png" alt="Kurt Cobain, vocalista do Nirvana, tocando guitarra" class="rounded-pill img-fluid" width="300" height="auto" loading="lazy">
+                </div>
+                <div class="col-md-7">
+                    <h2>A História do Nirvana</h2>
+                    <p class="p-2">O Nirvana foi uma banda de rock americana formada em Aberdeen, Washington, em 1987. Fundada por Kurt Cobain (vocalista e guitarrista) e Krist Novoselic (baixista), com Dave Grohl se juntando como baterista em 1990, a banda se tornou um dos maiores expoentes do movimento grunge de Seattle. Com álbuns como "Nevermind" (1991), que trazia o hit "Smells Like Teen Spirit", eles alcançaram sucesso global, mas também lidaram com os desafios da fama repentina.</p>
+                    <p class="p-2">A música do Nirvana era conhecida por suas dinâmicas de "suave/alto", letras introspectivas e muitas vezes melancólicas, e uma energia crua que capturou o espírito de uma geração. O impacto cultural da banda foi imenso, influenciando inúmeros artistas e abrindo caminho para o rock alternativo no mainstream. A trajetória da banda foi tragicamente interrompida com a morte de Kurt Cobain em 1994, mas seu legado continua vivo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens do Nirvana">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center g-4">
+                    <div class="col-md-4">
+                        <img src="img/nirvana-live.png" alt="Nirvana tocando ao vivo em um show lotado" class="img-fluid rounded-3" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/nirvana-unplugged.png" alt="Nirvana se apresentando no MTV Unplugged, com Kurt Cobain no violão" class="img-fluid rounded-3" loading="lazy">
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-md-center g-4">
+                    <div class="col-md-4">
+                        <img src="img/nirvana-band.png" alt="A banda Nirvana posando para uma foto" class="img-fluid rounded-3" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/nirvana-album.png" alt="Capa do álbum In Utero do Nirvana" class="img-fluid rounded-3" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3 text-center">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Deixe sua mensagem para a banda ou sobre o site"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+        <p>Siga o legado do Nirvana:</p>
+        <a href="#" aria-label="Link para o Spotify do Nirvana"><i class="bi bi-spotify"></i></a>
+        <a href="#" aria-label="Link para o YouTube do Nirvana"><i class="bi bi-youtube"></i></a>
+        <a href="#" aria-label="Link para o Facebook do Nirvana"><i class="bi bi-facebook"></i></a>
+        <p class="mt-3">Site fictício criado para fins educacionais. Todo o conteúdo é propriedade do Nirvana e suas respectivas gravadoras.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script-nirvana.js"></script>
+</body>
+
+</html>

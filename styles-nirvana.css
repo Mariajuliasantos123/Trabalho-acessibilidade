@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --nirvana-preto: #000000;
+    --nirvana-branco: #FFFFFF;
+    --nirvana-vermelho: #880000;
+
+    /* Variáveis para alto contraste */
+    --alto-contraste-fundo: #FFFFFF;
+    --alto-contraste-texto: #000000;
+    --alto-contraste-link: #FF0000;
+    --font-size: 1rem;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: var(--font-size);
+    color: var(--nirvana-branco);
+    background-color: var(--nirvana-preto);
+}
+
+header {
+    background-color: var(--nirvana-preto);
+}
+
+.nav-link {
+    color: var(--nirvana-branco);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--nirvana-vermelho);
+}
+
+h1, h2 {
+    font-family: 'Cutive Mono', monospace;
+    color: var(--nirvana-vermelho);
+    text-align: center;
+}
+
+.inicio-fundo {
+    background-color: var(--nirvana-preto);
+    padding: 60px;
+}
+
+.display-4 {
+    color: var(--nirvana-branco);
+    font-family: 'Cutive Mono', monospace;
+    font-style: normal;
+    text-shadow: none;
+}
+
+.img-inicio {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para destacar a imagem */
+}
+
+.botao-inicio {
+    background-color: var(--nirvana-vermelho);
+    color: var(--nirvana-branco);
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#historia {
+    background-color: #111111;
+    color: var(--nirvana-branco);
+}
+
+#historia .img-fluid {
+    border: 2px solid var(--nirvana-vermelho);
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#galeria {
+    background-color: var(--nirvana-preto);
+    color: var(--nirvana-branco);
+}
+
+#galeria .img-fluid {
+    border: 2px solid var(--nirvana-vermelho);
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#galeria .img-fluid:hover {
+    transform: scale(1.05); /* Efeito de zoom no hover */
+}
+
+#contato {
+    background-color: #111111;
+    color: var(--nirvana-branco);
+}
+
+.formulario {
+    background-color: var(--nirvana-preto);
+    border: 2px solid var(--nirvana-vermelho);
+    border-radius: 0;
+    color: var(--nirvana-branco);
+}
+
+.formulario button {
+    background-color: var(--nirvana-vermelho);
+    color: var(--nirvana-branco);
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: var(--nirvana-preto);
+    color: var(--nirvana-branco);
+    border-top: 2px solid var(--nirvana-vermelho);
+}
+
+footer i {
+    color: var(--nirvana-branco);
+}
+
+footer i:hover {
+    color: var(--nirvana-vermelho);
+}
+
+/* --- Menu de Acessibilidade --- */
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(0deg);
+    background-color: var(--nirvana-vermelho) !important;
+    color: var(--nirvana-branco) !important;
+    border: 1px solid var(--nirvana-vermelho) !important;
+    border-radius: 0;
+}
+
+.opcoes-acessibilidade button {
+    background-color: var(--nirvana-vermelho) !important;
+    color: var(--nirvana-branco) !important;
+    border: 1px solid var(--nirvana-vermelho) !important;
+    border-radius: 0;
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+/* --- Modo de Alto Contraste --- */
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario,
+.alto-contraste #historia,
+.alto-contraste #galeria,
+.alto-contraste #contato {
+    background-color: var(--alto-contraste-fundo) !important;
+    color: var(--alto-contraste-texto) !important;
+}
+
+.alto-contraste h1,
+.alto-contraste h2,
+.alto-contraste p,
+.alto-contraste .nav-link,
+.alto-contraste footer p,
+.alto-contraste label {
+    color: var(--alto-contraste-texto) !important;
+}
+
+.alto-contraste .nav-link,
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary,
+.alto-contraste .menu-acessibilidade button {
+    background-color: var(--alto-contraste-link) !important;
+    color: var(--alto-contraste-texto) !important;
+    border: 1px solid var(--alto-contraste-link) !important;
+}
+
+.alto-contraste .form-control {
+    background-color: var(--alto-contraste-fundo) !important;
+    color: var(--alto-contraste-texto) !important;
+    border: 1px solid var(--alto-contraste-link) !important;
+}
+
+.alto-contraste .form-control::placeholder {
+    color: var(--alto-contraste-texto) !important;
+}
+
+.alto-contraste .img-fluid {
+    border: 2px solid var(--alto-contraste-link) !important;
+}
